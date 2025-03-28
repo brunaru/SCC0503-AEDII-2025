@@ -5,19 +5,19 @@
 int main(void) {
   /* Precisa passar um arquivo de entrada para o programa na linha de comando. Exemplo: ./adjlist.out < simplegraph.txt . */
   Graph G;
-  int n, i, x, y;
+  int n, i, x, y, weight;
   if (scanf("%d\n", &n) == 1) {
     G = initGraph(n);
-    while (scanf("%d %d\n", &x, &y) != EOF) {
-      insertEdge(G, x, y);
+    while (scanf("%d %d %d\n", &x, &y, &weight) != EOF) {
+      insertEdge(G, x, y, weight);
     }
   }
 
+  //removeEdge(G, 2, 3);
   printGraph(G);
 
-  removeEdge(G, 2, 3);
-
-  //printGraph(G);
+  startDFS(G, 0);
+  startBFS(G, 0);
   destroyGraph(G);
   return 0;
 }
