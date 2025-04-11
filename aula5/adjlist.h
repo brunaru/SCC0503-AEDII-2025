@@ -217,8 +217,8 @@ void eulerPath(Graph G, Vertex v, Vertex end) {
       printf(" -> %d", v);
   }
   printf("\n");
-  //free(stack);
-  //destroyGraph(C);
+  free(stack);
+  destroyGraph(C);
 }
 
 void checkEulerPath(Graph G) {
