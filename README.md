@@ -14,3 +14,6 @@ Algoritmos de caminhos Euleriano e Hamiltoniano.
 
 Aula 05 - Ordenação Topológica #diretório aula5
 BFS modificado para ordenação topológica em largura.
+
+Aula 06 - Caminhos Mínimos
+Algoritmo de Dijkstra e Floy-Warshall.
